@@ -1,11 +1,16 @@
 #include <stdio.h>
 int main(void){
 	int temperatura =25;
+	float farenheit = temperatura * 9.0 / 5.0 + 32;
+	
+	printf("Temperatura: %d graus\n", temperatura);
+	printf("Farenheit: %.1f graus\n", farenheit);
+	
 	if (temperatura >= 20){
-		printf("Temperatura: %d graus\nTemperatura alta\n", temperatura);
+		printf("Temperatura alta\n");
 	}
 	else {
-		printf("Temperatura: %d graus\nTemperatura baixa\n", temperatura);
+		printf("Temperatura baixa\n");
 	}
 	return 0;
 }
